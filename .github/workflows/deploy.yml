@@ -27,11 +27,11 @@ jobs:
             node -v
             npm -v
             pm2 -v
-            
+
             cd projects/cicd-auto-deploy-demo
 
             git pull origin main
 
             npm ci
 
-            pm2 restart node-cicd-demo
+            pm2 restart cicd-auto-deploy-demo
