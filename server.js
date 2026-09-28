@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.get("/", (req, res) => {
-  res.send("Hello from Archak");
+  res.send("Version 2 deployed");
 });
 
 app.get("/health", (req, res) => {
