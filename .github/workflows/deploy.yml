@@ -21,6 +21,13 @@ jobs:
           script: |
             set -e
 
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+
+            node -v
+            npm -v
+            pm2 -v
+            
             cd projects/cicd-auto-deploy-demo
 
             git pull origin main
