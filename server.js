@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
         status: "success",
         message: "🚀 CI/CD deployment successful!",
         service: "Node.js Demo Server",
-        deployedAt: new Date().toISOString()
+        time: new Date().toISOString()
     });;
 });
 
